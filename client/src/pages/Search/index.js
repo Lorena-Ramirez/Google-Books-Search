@@ -10,6 +10,7 @@ export default function Search() {
         <h2>Results </h2>
         {searchResults.map(book => (
         <BookList
+          key={book.id}
           title={book.volumeInfo.title} 
           authors={book.volumeInfo.authors.join(", ")} 
           desc={book.volumeInfo.description} 
