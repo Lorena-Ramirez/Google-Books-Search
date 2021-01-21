@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function BookList({title, authors,desc,image,link}) {
   return (
-    <div className="container card">
+    <div className="container card mt-3">
      <div className="row">
         <div className="col">
           <h3>{title}</h3>
