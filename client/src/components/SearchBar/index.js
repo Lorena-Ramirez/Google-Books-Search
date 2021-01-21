@@ -6,7 +6,7 @@ function SearchBar({ setSearchResults }) {
 
   const handleSearch = async () => {
     console.log("You searched for ", searchTerm);
-    await API.getBooks(searchTerm)
+    await API.searchBooks(searchTerm)
       .then(resp =>{
         console.log(resp)
         setSearchResults(resp?.data?.items)
